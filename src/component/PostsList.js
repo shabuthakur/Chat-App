@@ -23,7 +23,7 @@ class PostsList extends Component {
               <div className="post-actions">
                 <div className="post-like">
                   <img
-                    src="https://image.flaticon.com/icons/svg/1077/1077035.svg"
+                    src="https://cdn-icons.flaticon.com/png/128/739/premium/739231.png?token=exp=1635147148~hmac=fc70e2d924e4d971cde9a80c5f83d294"
                     alt="likes-icon"
                   />
                   <span>{post.likes.length}</span>
