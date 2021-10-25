@@ -2,10 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchPosts } from '../actions/posts';
-import { Home, Navbar, page404 } from './';
+import { Home, Navbar, page404, Login } from './';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const login = () => <div>Login</div>;
 const Signup = () => <div>Signup</div>;
 /* eslint-disable */
 // eslint-disable-next-line
@@ -28,7 +27,7 @@ class App extends React.Component {
                 return <Home {...props} posts={posts} />;
               }}
             ></Route>
-            <Route path="/login" component={login}></Route>
+            <Route path="/Login" component={Login}></Route>
             <Route path="/signup" component={Signup}></Route>
             <Route component={page404}></Route>
           </Switch>
